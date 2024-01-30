@@ -1,0 +1,348 @@
+:root {
+  --primary: hsl(220, 56%, 46%);
+
+  --accent-100: hsl(155, 37%, 75%);
+  --accent-200: hsl(155, 37%, 50%);
+
+  --secondary-100: hsl(20, 86%, 73%);
+  --secondary-200: hsl(20, 86%, 63%);
+
+  --light-gray: hsl(0, 0%, 90%);
+  --mid-gray: hsl(0, 0%, 60%);
+  --dark-gray: hsl(0, 0%, 25%);
+
+  --default-text: hsl(0, 0%, 10%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  width: 100%;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*.................GENERAL STYLING.........*/
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.section-padding {
+  padding: 2.5rem 5rem;
+}
+
+/*.........HEADER........*/
+header {
+  display: flex;
+  background-color: var(--light-gray);
+  padding: 0.5rem 5rem;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0.03rem 0.1rem var(--primary);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  height: 4.5rem;
+  width: 3.5rem;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+}
+
+.navlinks {
+  display: flex;
+  margin: 0 1.5rem;
+  gap: 2rem;
+}
+
+.navlinks li {
+  position: relative;
+  cursor: pointer;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--default-text);
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+}
+
+.navlinks li a:hover,
+.navlinks li a.active {
+  color: var(--accent-200);
+}
+
+.navlinks li a.active::after,
+.navlinks li a:hover::after {
+  content: "";
+  width: 100%;
+  height: 0.125rem;
+  background: var(--accent-200);
+  position: absolute;
+  left: 0.03rem;
+  bottom: 0.125rem;
+}
+
+.fa-solid {
+  font-size: 1.5rem;
+}
+
+.hamburger {
+  height: 1.5rem;
+  cursor: pointer;
+}
+
+/*...........Hero Section.......... */
+#hero {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: url("image/hero.jpg");
+  background-size: cover;
+  color: var(--default-text);
+  padding: 0 5rem;
+}
+
+#hero h4 {
+  padding-bottom: 1.5rem;
+}
+
+#hero h2 {
+  color: var(--primary);
+}
+
+#hero p {
+  padding: 1rem 0;
+  color: var(--dark-gray);
+}
+
+#hero h6 {
+  color: var(--primary);
+  background-color: var(--accent-100);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+
+/*.............Features............*/
+#feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  width: 18rem;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  box-shadow: 0.8rem 0.8rem 2rem rgba(0, 0, 0, 0.3);
+  border: 0.16rem solid var(--light-gray);
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+}
+
+.feature-box img {
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+
+.feature-box:hover {
+  box-shadow: 0.2rem 0.2rem 3.5rem rgba(70, 62, 221, 0.1);
+}
+
+.feature-box h6 {
+  display: inline-block;
+  background-color: var(--secondary-100);
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+}
+
+.feature-box:nth-child(2) h6 {
+  background-color: var(--accent-100);
+}
+
+.feature-box:nth-child(3) h6 {
+  background-color: var(--secondary-100);
+}
+
+.feature-box:nth-child(4) h6 {
+  background-color: var(--accent-100);
+}
+
+/*.................Top Items...............*/
+#top-items {
+  text-align: center;
+}
+
+#top-items p {
+  color: var(--mid-gray);
+}
+
+.top-items-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.top-items-card {
+  width: 20rem;
+  min-width: 16rem;
+  border: 1px solid var(--light-gray);
+  padding: 0.6rem 0.7rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  box-shadow: 0.8rem 0.8rem 2rem rgba(0, 0, 0, 0.3);
+  margin: 1rem 0;
+  position: relative;
+}
+
+.top-items-card:hover {
+  box-shadow: 0.2rem 0.2rem 3.5rem rgba(70, 62, 221, 0.1);
+  transition: 0.3s ease;
+}
+
+.top-items-card img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.top-items-info {
+  text-align: start;
+  padding: 0.6rem 0;
+}
+
+.top-items-info span {
+  color: var(--mid-gray);
+  font-size: 0.8rem;
+}
+
+.top-items-info h5 {
+  padding-top: 0.5rem;
+  color: var(--default-text);
+  font-size: 0.9rem;
+}
+
+.star-rating i {
+  font-size: 0.8rem;
+  color: var(--secondary-200);
+}
+
+.top-items-info h4 {
+  padding-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.top-items-card .fa-solid {
+  width: 2.4rem;
+  height: 2.4rem;
+  line-height: 2.4rem;
+  border-radius: 2.5rem;
+  background-color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+  color: var(--primary);
+  position: absolute;
+  bottom: 1.2rem;
+  right: 0.8rem;
+}
+
+/*.................Media Query...............*/
+@media (max-width: 30em) {
+}
+
+@media (m-width: 50em) {
+}
