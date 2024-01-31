@@ -226,7 +226,7 @@ nav {
 
 /*...........Hero Section.......... */
 #hero {
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
