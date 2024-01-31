@@ -82,8 +82,8 @@ picture {
 /*.................GENERAL STYLING.........*/
 
 h1 {
-  font-size: 3.5rem;
-  line-height: 3.5rem;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 
 h2 {
@@ -91,9 +91,19 @@ h2 {
   line-height: 3rem;
 }
 
+h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
 h4 {
   font-size: 1.5rem;
   line-height: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 
 h6 {
@@ -102,7 +112,8 @@ h6 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 3rem;
 }
 
 li {
@@ -111,6 +122,35 @@ li {
 
 .section-padding {
   padding: 2.5rem 5rem;
+}
+
+.section-margin {
+  margin: 2.5rem 0;
+}
+
+button.default {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  color: var(--default-text);
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: none;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+button.transparent {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: transparent;
+  transition: 0.3s ease;
 }
 
 /*.........HEADER........*/
@@ -182,7 +222,7 @@ nav {
 
 /*...........Hero Section.......... */
 #hero {
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -268,13 +308,15 @@ nav {
 
 #top-items p {
   color: var(--mid-gray);
+  font-size: 1rem;
+  margin: 1rem 0;
 }
 
 .top-items-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 1rem;
 }
 
 .top-items-card {
@@ -324,7 +366,7 @@ nav {
   padding-top: 0.5rem;
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--accent-200);
 }
 
 .top-items-card .fa-solid {
@@ -334,15 +376,209 @@ nav {
   border-radius: 2.5rem;
   background-color: var(--light-gray);
   border: 1px solid var(--light-gray);
-  color: var(--primary);
+  color: var(--accent-200);
   position: absolute;
   bottom: 1.2rem;
   right: 0.8rem;
+}
+
+/*.................Promotion...............*/
+#promotion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("image/promotion.jpg");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+}
+
+#promotion h4 {
+  color: white;
+  font-size: 1.3rem;
+}
+
+#promotion h2 {
+  color: white;
+  padding: 1rem 0;
+}
+
+#promotion h2 span {
+  color: var(--secondary-100);
+}
+
+#promotion button:hover {
+  background-color: var(--secondary-200);
+  color: white;
+}
+
+/*...............banner ................>*/
+
+#banner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#banner .banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("image/banner1.jpg");
+  width: 48%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  gap: 0.7rem;
+  padding: 2rem;
+}
+
+.banner-container span {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.banner-container h4 {
+  color: white;
+  font-weight: 500;
+}
+
+.banner-container h3 {
+  color: white;
+  font-weight: 600;
+}
+
+.banner-container:hover button {
+  background: var(--accent-200);
+  border: 1px solid var(--accent-200);
+}
+
+#banner .banner-container2 {
+  background-image: url("image/banner2.jpeg");
+}
+
+/*.................Newsletter...............*/
+
+#newsletter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--primary);
+}
+
+#newsletter h4 {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 700;
+}
+
+#newsletter p {
+  color: var(--mid-gray);
+  font-size: 0.9rem;
+  padding-top: 0.5rem;
+  font-weight: 600;
+}
+
+#newsletter span {
+  color: var(--secondary-100);
+}
+
+#newsletter .form {
+  display: flex;
+  width: 30%;
+}
+
+#newsletter input {
+  height: 3.125rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 0.2rem;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+  background-color: var(--accent-200);
+  color: white;
+  white-space: nowrap;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/*.................Footer...............*/
+.column-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.column .logo {
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+.column h5 {
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
+  color: var(--default-text);
+}
+
+.column p {
+  font-size: 0.85rem;
+  line-height: 1rem;
+  padding-bottom: 0.8rem;
+  color: var(--default-text);
+}
+
+.socials {
+  margin-top: 1.2rem;
+}
+
+.socials i {
+  color: var(--dark-gray);
+  padding-right: 0.25rem;
+  cursor: pointer;
+}
+
+.socials i:hover,
+.column a:hover {
+  color: var(--accent-200);
+}
+
+.column a {
+  font-size: 0.85rem;
+  text-decoration: none;
+  margin-bottom: 0.7rem;
+  color: var(--default-text);
+}
+
+.column-last img {
+  width: 15rem;
+  margin-top: 0.5rem;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
 }
 
 /*.................Media Query...............*/
 @media (max-width: 30em) {
 }
 
-@media (m-width: 50em) {
+@media (max-width: 50em) {
 }
