@@ -1,5 +1,5 @@
 :root {
-  --primary: hsl(220, 56%, 46%);
+  --primary: hsl(220, 56%, 36%);
 
   --accent-100: hsl(155, 37%, 75%);
   --accent-200: hsl(155, 37%, 50%);
@@ -124,6 +124,10 @@ li {
   padding: 2.5rem 5rem;
 }
 
+.section-items-padding {
+  padding: 2.5rem 5rem;
+}
+
 .section-margin {
   margin: 2.5rem 0;
 }
@@ -156,15 +160,14 @@ button.transparent {
 /*.........HEADER........*/
 header {
   display: flex;
+  width: 100%;
   background-color: var(--light-gray);
   padding: 0.5rem 5rem;
   z-index: 999;
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0.03rem 0.1rem var(--primary);
-  position: sticky;
-  top: 0;
-  left: 0;
+  position: fixed;
 }
 
 .logo {
@@ -223,7 +226,7 @@ nav {
 
 /*...........Hero Section.......... */
 #hero {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -232,11 +235,11 @@ nav {
   background: url("image/hero.jpg");
   background-size: cover;
   color: var(--default-text);
-  padding: 0 5rem;
 }
 
 #hero h4 {
   padding-bottom: 1.5rem;
+  margin-left: 0.5rem;
 }
 
 #hero h2 {
@@ -258,14 +261,15 @@ nav {
 
 /*.............Features............*/
 #feature {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .feature-box {
-  width: 18rem;
+  width: 100%;
   text-align: center;
   padding: 1.5rem 1rem;
   box-shadow: 0.8rem 0.8rem 2rem rgba(0, 0, 0, 0.3);
@@ -314,15 +318,13 @@ nav {
 }
 
 .top-items-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
 .top-items-card {
-  width: 20rem;
-  min-width: 16rem;
+  width: 100%;
   border: 1px solid var(--light-gray);
   padding: 0.6rem 0.7rem;
   border-radius: 1rem;
@@ -375,11 +377,10 @@ nav {
   height: 2.4rem;
   line-height: 2.4rem;
   border-radius: 2.5rem;
-  background-color: var(--light-gray);
   border: 1px solid var(--light-gray);
   color: var(--accent-200);
   position: absolute;
-  bottom: 1.2rem;
+  bottom: 1rem;
   right: 0.8rem;
 }
 
@@ -389,6 +390,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-image: url("image/promotion.jpg");
   width: 100%;
   height: 40vh;
@@ -428,8 +430,8 @@ nav {
   justify-content: center;
   align-items: flex-start;
   background-image: url("image/banner1.jpg");
-  width: 48%;
-  height: 50vh;
+  width: 100%;
+  height: 40vh;
   background-size: cover;
   background-position: center;
   gap: 0.7rem;
@@ -539,7 +541,7 @@ nav {
 }
 
 .column p {
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   line-height: 1rem;
   padding-bottom: 0.8rem;
   color: var(--default-text);
@@ -573,12 +575,92 @@ nav {
 }
 
 .copyright {
+  font-size: 0.8rem;
   width: 100%;
+  margin-top: 1rem;
   text-align: center;
 }
 
 /*.................Media Query...............*/
 @media (max-width: 30em) {
+  .section-padding {
+    padding: 2.5rem 1.2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1rem;
+  }
+
+  header {
+    padding: 0.5rem 1.2rem;
+  }
+
+  #hero {
+    padding: 0 1rem;
+    background-position: top 25% right 50%;
+  }
+
+  #hero h4 {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    padding-bottom: 0.2rem;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  #hero h2 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  #hero p {
+    padding: 0.1rem 0;
+    font-weight: 600;
+  }
+
+  .link {
+    display: none;
+  }
+
+  #feature {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .top-items-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .top-items-info h4 {
+    font-size: 1.1rem;
+  }
+
+  .top-items-card .fa-solid {
+    font-size: 1.1rem;
+  }
+
+  #banner {
+    display: grid;
+    gap: 1rem;
+  }
+
+  #banner .banner-container {
+    background-position: top 25% right 40%;
+  }
+
+  #newsletter .form {
+    display: flex;
+    width: 80%;
+  }
+
+  .column-div {
+    display: grid;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 50em) {
