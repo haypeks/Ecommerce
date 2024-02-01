@@ -82,13 +82,38 @@ picture {
 /*.................GENERAL STYLING.........*/
 
 h1 {
-  font-size: 3rem;
-  line-height: 2.9rem;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 
 h2 {
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 3rem;
 }
 
 li {
@@ -137,7 +162,7 @@ header {
   display: flex;
   width: 100%;
   background-color: var(--light-gray);
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem 5rem;
   z-index: 999;
   justify-content: space-between;
   align-items: center;
@@ -153,10 +178,6 @@ header {
 
 nav {
   display: flex;
-}
-
-.link {
-  display: none;
 }
 
 .navlinks {
@@ -208,39 +229,40 @@ nav {
   height: 100vh;
   width: 100%;
   display: flex;
-  padding: 0rem 0.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background: url("image/hero.jpg");
   background-size: cover;
   color: var(--default-text);
-  background-position: top 25% right 50%;
 }
 
 #hero h4 {
-  font-size: 1.2rem;
-  line-height: 1.3rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 1.5rem;
   margin-left: 0.5rem;
 }
 
 #hero h2 {
-  font-size: 2.4rem;
-  line-height: 2.4rem;
   color: var(--primary);
 }
 
 #hero p {
-  padding: 0.1rem 0;
-  font-weight: 600;
+  padding: 1rem 0;
   color: var(--dark-gray);
+}
+
+#hero h6 {
+  color: var(--primary);
+  background-color: var(--accent-100);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 1.5rem;
 }
 
 /*.............Features............*/
 #feature {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   align-items: center;
   justify-content: space-between;
@@ -250,8 +272,8 @@ nav {
   width: 100%;
   text-align: center;
   padding: 1.5rem 1rem;
-  box-shadow: 0.4rem 0.4rem 1rem rgba(0, 0, 0, 0.3);
-  border: 0.08rem solid var(--light-gray);
+  box-shadow: 0.8rem 0.8rem 2rem rgba(0, 0, 0, 0.3);
+  border: 0.16rem solid var(--light-gray);
   border-radius: 0.25rem;
   margin: 1rem 0;
 }
@@ -269,7 +291,6 @@ nav {
   display: inline-block;
   background-color: var(--secondary-100);
   border-radius: 0.3rem;
-  font-size: 0.7rem;
   padding: 0.2rem 1rem;
 }
 
@@ -298,7 +319,7 @@ nav {
 
 .top-items-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -320,7 +341,7 @@ nav {
 
 .top-items-card img {
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 .top-items-info {
@@ -330,38 +351,37 @@ nav {
 
 .top-items-info span {
   color: var(--mid-gray);
-  font-size: 0.6rem;
-  line-height: 0.7rem;
+  font-size: 0.8rem;
 }
 
 .top-items-info h5 {
-  padding-top: 0.1rem;
+  padding-top: 0.5rem;
   color: var(--default-text);
-  font-size: 0.7rem;
+  font-size: 0.9rem;
 }
 
 .star-rating i {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: var(--secondary-200);
 }
 
 .top-items-info h4 {
   padding-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  line-height: 0.9rem;
   color: var(--accent-200);
 }
 
 .top-items-card .fa-solid {
-  font-size: 0.9rem;
   width: 2.4rem;
   height: 2.4rem;
   line-height: 2.4rem;
+  border-radius: 2.5rem;
+  border: 1px solid var(--light-gray);
   color: var(--accent-200);
   position: absolute;
-  bottom: 0.5rem;
-  right: 0.5rem;
+  bottom: 1rem;
+  right: 0.8rem;
 }
 
 /*.................Promotion...............*/
@@ -372,7 +392,6 @@ nav {
   align-items: center;
   text-align: center;
   background-image: url("image/promotion.jpg");
-  opacity: 0.8;
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -380,7 +399,7 @@ nav {
 
 #promotion h4 {
   color: white;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 #promotion h2 {
@@ -400,9 +419,9 @@ nav {
 /*...............banner ................>*/
 
 #banner {
-  display: grid;
+  display: flex;
   justify-content: space-between;
-  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 #banner .banner-container {
@@ -414,7 +433,7 @@ nav {
   width: 100%;
   height: 40vh;
   background-size: cover;
-  background-position: top 25% right 40%;
+  background-position: center;
   gap: 0.7rem;
   padding: 2rem;
 }
@@ -474,7 +493,7 @@ nav {
 
 #newsletter .form {
   display: flex;
-  width: 100%;
+  width: 30%;
 }
 
 #newsletter input {
@@ -499,7 +518,9 @@ nav {
 
 /*.................Footer...............*/
 .column-div {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .column {
@@ -520,7 +541,7 @@ nav {
 }
 
 .column p {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   line-height: 1rem;
   padding-bottom: 0.8rem;
   color: var(--default-text);
@@ -542,7 +563,7 @@ nav {
 }
 
 .column a {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-decoration: none;
   margin-bottom: 0.7rem;
   color: var(--default-text);
@@ -550,11 +571,7 @@ nav {
 
 .column-last img {
   width: 15rem;
-  margin-top: 0.2rem;
-}
-
-.column-last p {
-  padding-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .copyright {
@@ -565,7 +582,85 @@ nav {
 }
 
 /*.................Media Query...............*/
-@media (min-width: 30em) {
+@media (max-width: 30em) {
+  .section-padding {
+    padding: 2.5rem 1.2rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 1rem;
+  }
+
+  header {
+    padding: 0.5rem 1.2rem;
+  }
+
+  #hero {
+    padding: 0 1rem;
+    background-position: top 25% right 50%;
+  }
+
+  #hero h4 {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    padding-bottom: 0.2rem;
+  }
+
+  #hero h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  #hero h2 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+  }
+
+  #hero p {
+    padding: 0.1rem 0;
+    font-weight: 600;
+  }
+
+  .link {
+    display: none;
+  }
+
+  #feature {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .top-items-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .top-items-info h4 {
+    font-size: 1rem;
+  }
+
+  .top-items-card .fa-solid {
+    font-size: 1rem;
+  }
+
+  #banner {
+    display: grid;
+    gap: 1rem;
+  }
+
+  #banner .banner-container {
+    background-position: top 25% right 40%;
+  }
+
+  #newsletter .form {
+    display: flex;
+    width: 80%;
+  }
+
+  .column-div {
+    display: grid;
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 50em) {
