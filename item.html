@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="nav-flex">
+        <div>
+          <a href="#"><img class="logo" src="image/logo.svg" alt="" /></a>
+        </div>
+        <button
+          class="toggle-menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <div class="secondary-nav">
+          <nav class="navbar">
+            <ul
+              aria-label="primary"
+              role="list"
+              class="nav-links"
+              id="primary-navigation"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="shop.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping cart"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="item-detail" class="section-padding">
+      <div id="single-item">
+        <img src="image/top-items/crew-neck.webp" id="main-image" alt="" />
+      </div>
+      <div class="single-item-details">
+        <h3>
+          Crew Neck Flowers Print Sweatshirt, Casual Sports Running Long Sleeve
+          Tops
+        </h3>
+        <div class="star-rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <h2>£27.99</h2>
+        <div class="small-image-group">
+          <div>
+            <img
+              class="small-image"
+              src="image/top-items/crew-neck.webp"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="small-image"
+              src="image/top-items/crew-neck2.webp"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="small-image"
+              src="image/top-items/crew-neck3.webp"
+              alt=""
+            />
+          </div>
+        </div>
+        <h4>Size</h4>
+        <div class="size">
+          <div class="category">S(8)</div>
+          <div class="category">M(10)</div>
+          <div class="category">L(12)</div>
+          <div class="category">XL(16)</div>
+        </div>
+        <div class="quantity-div">
+          <label for="quantity">Qty</label>
+          <select name="" id="quantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div class="add-to-cart">
+          <button class="primary">Add to Cart</button>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="top-items" class="section-padding">
+      <h2 class="cust-viewed">Customers Also Viewed</h2>
+      <div class="top-items-container">
+        <div class="top-items-card">
+          <img src="image/top-items/women-coat.webp" alt="" />
+          <div class="top-items-info">
+            <span>Ziodiut</span>
+            <h5>Woolen Coat</h5>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>£48.99</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+        </div>
+
+        <div class="top-items-card">
+          <img src="image/top-items/solid-tshirt.webp" alt="" />
+          <div class="top-items-info">
+            <span>Plush</span>
+            <h5>Solid T-Shirt</h5>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>£82.99</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+        </div>
+
+        <div class="top-items-card">
+          <img src="image/top-items/gown-blue.webp" alt="" />
+          <div class="top-items-info">
+            <span>Chris Mulan</span>
+            <h5>Women's Gown</h5>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>£32.99</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+        </div>
+
+        <div class="top-items-card">
+          <img src="image/top-items/turtleneck.webp" alt="" />
+          <div class="top-items-info">
+            <span>Shades Factory</span>
+            <h5>Turtleneck T-Shirt</h5>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>£13.99</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+        </div>
+
+        <div class="top-items-card">
+          <img src="image/top-items/plaid-splicing.webp" alt="" />
+          <div class="top-items-info">
+            <span>Vindi</span>
+            <h5>Plaid V Neck</h5>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>£46.99</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+        </div>
+
+        <div class="top-items-card">
+          <img src="image/top-items/ribbed.webp" alt="" />
+          <div class="top-items-info">
+            <span>Lee</span>
+            <h5>Ribbed Dress</h5>
+            <div class="star-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <h4>£68.99</h4>
+          </div>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-padding section-margin">
+      <div class="news-text">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get email updates about our <span>latest offers</span></p>
+      </div>
+      <div class="form">
+        <input type="email" placeholder="Enter your email" />
+        <button class="default">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-padding">
+      <div class="column-div">
+        <div class="column">
+          <img class="logo" src="image/logo.svg" alt="" />
+          <h5>Contact</h5>
+          <p><strong>Address:</strong> 7, Jose St, Leicester, LE16DD</p>
+          <p><strong>Phone:</strong> +44 77 114 433 22</p>
+          <p><strong>Opening Hours:</strong> 09:00 - 19:00, Mon -Sat</p>
+          <div class="socials">
+            <h5>Follow Us</h5>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+        <div class="column">
+          <h5>About</h5>
+          <a href="#">About</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="column">
+          <h5>My Account</h5>
+          <a href="#">Sign in</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Favourite</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="column-last">
+          <h4>Install App</h4>
+          <img class="download-store" src="image/ios-google.png" alt="" />
+          <p>Secured payment Gateways</p>
+          <img src="image/payment.png" alt="" />
+        </div>
+      </div>
+      <div class="copyright">copyright 2024 Haypeks. All Right reserved</div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5a5b66221c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
