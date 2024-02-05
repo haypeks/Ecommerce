@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="nav-flex">
+        <div>
+          <a href="#"><img class="logo" src="image/logo.svg" alt="" /></a>
+        </div>
+        <button
+          class="toggle-menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <div class="secondary-nav">
+          <nav class="navbar">
+            <ul
+              aria-label="primary"
+              role="list"
+              class="nav-links"
+              id="primary-navigation"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <div>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping cart"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="contact-header">
+      <h1>Let's Talk</h1>
+      <p>We will love to hear from you. Send us a message!</p>
+    </section>
+
+    <section id="contact-details" class="section-padding">
+      <div class="details">
+        <div class="details-column">
+          <div>
+            <h3>Contact us today</h3>
+          </div>
+          <div>
+            <li>
+              <i class="fa-solid fa-location-pin"></i>
+              <p>7, Jose, Leicester, LE16DP</p>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <p>contact@matak.com</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <p>+44 77 114 433 22</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-business-time"></i>
+              <p>09:00 - 19:00, Mon -Sat</p>
+            </li>
+          </div>
+        </div>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2421.5092580533874!2d-1.1356132233488823!3d52.6327118278787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487761202b7880e7%3A0x6a4e70a0928334f7!2sMarket%20St%2C%20Leicester%20LE1%206DP!5e0!3m2!1sen!2suk!4v1707144546328!5m2!1sen!2suk"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="form">
+        <form action="">
+          <h3>Send us a message</h3>
+          <input type="text" placeholder="name" name="name" />
+          <input type="email" placeholder="E-mail" name="email" />
+          <input type="text" placeholder="subject" name="subject" />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="message"
+          ></textarea>
+        </form>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section-padding section-margin">
+      <div class="news-text">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get email updates about our <span>latest offers</span></p>
+      </div>
+      <div class="form">
+        <input type="email" placeholder="Enter your email" />
+        <button class="default">Sign Up</button>
+      </div>
+    </section>
+
+    <footer class="section-padding">
+      <div class="column-div">
+        <div class="column">
+          <img class="logo" src="image/logo.svg" alt="" />
+          <h5>Contact</h5>
+          <p><strong>Address:</strong> 7, Jose St, Leicester, LE16DD</p>
+          <p><strong>Phone:</strong> +44 77 114 433 22</p>
+          <p><strong>Opening Hours:</strong> 09:00 - 19:00, Mon -Sat</p>
+          <div class="socials">
+            <h5>Follow Us</h5>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+        </div>
+        <div class="column">
+          <h5>About</h5>
+          <a href="#">About</a>
+          <a href="#">Delivery Information</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="column">
+          <h5>My Account</h5>
+          <a href="#">Sign in</a>
+          <a href="#">View Cart</a>
+          <a href="#">My Favourite</a>
+          <a href="#">Track My Order</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="column-last">
+          <h4>Install App</h4>
+          <img class="download-store" src="image/ios-google.png" alt="" />
+          <p>Secured payment Gateways</p>
+          <img src="image/payment.png" alt="" />
+        </div>
+      </div>
+      <div class="copyright">copyright 2024 Haypeks. All Right reserved</div>
+    </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/5a5b66221c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
