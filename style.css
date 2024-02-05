@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --primary: hsl(220, 56%, 36%);
 
@@ -14,9 +17,6 @@
 
   --default-text: hsl(0, 0%, 10%);
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html {
   font-family: "Raleway", sans-serif;
@@ -178,8 +178,8 @@ button.transparent {
 }
 
 .logo {
-  height: 4.5rem;
-  width: 3.5rem;
+  height: 9rem;
+  width: 9rem;
   cursor: pointer;
 }
 
@@ -187,8 +187,8 @@ button.transparent {
   display: none;
   position: fixed;
   padding: 2rem;
-  inset: 7rem 3rem auto;
-  max-width: 25rem;
+  inset: 6rem 2rem auto;
+  min-width: 20rem;
   margin-inline: auto;
   background: var(--light-gray);
   border-radius: 0.5rem;
@@ -586,8 +586,9 @@ a .active {
 
 /*.................Footer...............*/
 footer {
-  background-color: var(--light-gray);
+  background-color: var(--lighter-gray);
 }
+
 .column-div {
   display: grid;
 }
@@ -599,8 +600,10 @@ footer {
 }
 
 .column .logo {
-  height: 3rem;
-  margin-bottom: 2rem;
+  width: 9rem;
+  height: 9rem;
+  margin-top: -3rem;
+  margin-bottom: 0rem;
 }
 
 .column h5 {
