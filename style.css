@@ -158,6 +158,9 @@ button.transparent {
   border: 0 !important;
 }
 
+.hidden {
+  display: none;
+}
 /*.........HEADER........*/
 .nav-flex {
   display: flex;
@@ -439,6 +442,12 @@ a .active {
   right: 0.5rem;
 }
 
+.top-items-card .fav-icon {
+  position: absolute;
+  top: 84%;
+  left: 38%;
+}
+
 /*.................Promotion...............*/
 #promotion {
   display: flex;
@@ -528,7 +537,7 @@ a .active {
 }
 
 #banner .banner-container2 {
-  background-image: url("image/banner2.jpeg");
+  background-image: url("image/banner2.jpg");
 }
 
 /*.................Newsletter...............*/
